@@ -1,23 +1,21 @@
 package even_odd.even_odd_595;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.*;
-import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
-    
-     @Test
-    public void even() throws Exception {
-        assertEquals(4, 2 + 2);
-    }
-     @Test
-     public void odd() throws Exception {
-         assertEquals(3, 2 + 1);
-     }
+import org.junit.Test;
+public class AppTest {
+ 
+	 @Test
+	    public void testSetImageForConditionOne() {
+	        //write test to make conditionOne true
+		 App p = new App();
+		 assertEquals("10 is even number",true,p.isEvenNumber(10));
+	    }
+
+	 @Test
+	    public void testSetImageForElseCondition() {
+	        //write test to make conditionOne true
+		 App p = new App();
+		 assertEquals("10 is even number",true,p.isEvenNumber(10));
+	    }
 }
